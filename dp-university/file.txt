@@ -1,3 +1,5 @@
+QUERY CON SELECT 
+
 Esecizio 1
 
 SELECT *
@@ -39,3 +41,29 @@ Esercizio 8
 SELECT *
 FROM `teachers`
 WHERE  `phone` IS NOT NULL;
+
+QUERY CON GROUP
+
+Esecizio 1 
+
+SELECT YEAR (`enrolment_date`) AS `anno_iscrizione`, COUNT (*)
+FROM `students``
+GROUP BY `anno_iscrizione`;
+
+Esecizio 2 
+
+SELECT `office_address`, COUNT(*)
+FROM `teachers`
+GROUP BY `office_address`;
+
+Esecizio 3 
+
+SELECT `exam_id`, AVG(`vote`)
+FROM `exam_student``
+GROUP BY `exam_id`;
+
+Esecizio 4
+
+SELECT `department_id`, COUNT(*)
+FROM `degrees`
+GROUP BY `department_id`;
